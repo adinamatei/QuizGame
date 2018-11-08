@@ -105,7 +105,7 @@ c) correct answer (I would use a number for this)
     
     // keep score 
     function calcScore() {
-        const score = 0;
+        let score = 0;
         return function (correct) {
             if(correct){
                 score += 1;
@@ -119,8 +119,6 @@ c) correct answer (I would use a number for this)
     function nextQuestion() {
         // get a random question
         let randomQuestion = Math.floor(Math.random() * arrQuestions.length);
-        // console.log(randomQuestion);
-        // console.log(arrQuestions[randomQuestion]);
 
         // display the question
         arrQuestions[randomQuestion].logQuestion();
